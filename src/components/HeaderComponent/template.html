@@ -1,0 +1,46 @@
+<header class="sticky" id="headerApp">
+  <div class="container">
+    <div class="d-flex justify-content-between align-item-center">
+      <router-link to="/" tag="div" class="header-logo">
+        <img width="150" height="60" :src="logoUrl" alt="" />
+      </router-link>
+      <ul v-if='isShow()' class="header-nav" >
+        <li>
+          <router-link to="/Login" tag="a">會員資料</router-link>
+        </li>
+        <li>
+          <a id="header-chatting">我的行程</a>
+        </li>
+        <li>
+          <router-link to="/Posts" tag="a">貼文區</router-link>
+        </li>
+        <li>
+          <router-link to="/" tag="a">首頁</router-link>
+        </li>
+      </ul>
+      <ul v-if="!isShow()" class="header-nav">
+        <li>
+          <font-awesome-icon @click="toggle" :icon="['fas', 'bars']" />
+        </li>
+      </ul>
+      <div class="slide-in" :class="open ? 'open' : ''">
+        <button class="close-btn" @click="toggle"> X </button>
+        <ul class="slide-bar">
+          <li>
+            <router-link to="/" tag="a">首頁</router-link>
+          </li>
+          <li>
+            <router-link to="/Posts" tag="a">貼文區</router-link>
+          </li>
+          <li>
+            <a id="header-chatting">我的行程</a>
+          </li>
+          <li>
+            <router-link to="/Login" tag="a">會員資料</router-link>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</header>

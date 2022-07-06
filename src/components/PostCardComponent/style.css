@@ -1,0 +1,37 @@
+.container{
+  margin-top: 30px;
+  width: 100%;  
+}
+
+.post-card {
+  position: relative;
+  height: 300px;
+  width: 90%;
+  left: 5%;
+  right: inherit;
+  text-align: left;
+  float: left;
+  display: flex;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+
+img {
+  position: relative;
+  height: 250px;
+  padding-left: 5%;
+  padding-top: 20px;
+}
+
+.title-bar {
+  position: relative;
+  vertical-align: top;
+  padding-left: 100px;
+  margin-top: 8%;
+  font-size: 3em;
+}
+
+.content-bar {
+  padding: 30px 30px 30px 100px;
+}
+

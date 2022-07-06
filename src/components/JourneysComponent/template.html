@@ -1,0 +1,20 @@
+<div class="content-box">
+  <div class="title-box">
+    <span class="title">{{ title1 }}</span>
+    <span class="subtitle">{{ subtitle1 }}</span>
+  </div>
+  <router-link class="content" v-for="item in title1Items" :to=item.path>
+    <img :src="item.url">
+    <span class="title-bar">{{ item.name }}</span>
+  </router-link>
+
+  <div class="title-box">
+    <span class="title">{{ title2 }}</span>
+    <span class="subtitle">{{ subtitle2 }}</span>
+  </div>
+  <router-link class="content" v-for="item in title2Items" :to=item.path>
+    <img :src="item.url">
+    <span class="title-bar">{{ item.name }}</span>
+  </router-link>
+</div>
+

@@ -1,0 +1,10 @@
+<div v-if="!isLogin">
+  <h1 class="warning">你尚未登入，請使用下方方式登入</h1>
+  <img :src="googleLink" 
+    class="google-link"
+    @click="Login"
+  />
+</div>
+<div v-if="isLogin">
+  <h1>歡迎 {{ userName }}</h1>
+</div>

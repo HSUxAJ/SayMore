@@ -1,0 +1,24 @@
+<div class="title-bar">
+  <span class="title">{{ title }}</span>&nbsp&nbsp&nbsp&nbsp
+  <span class="subtitle">{{ subtitle }}</span>
+</div>
+<div 
+  class="picture-bar" 
+  :style="{ backgroundImage: 'url(' + imgUrl + ')' }"
+/>
+
+<div class="covered-items" >
+  <div class="content-box" v-for="(intro) in contents">
+    <span class="line" :id=intro.title></span>
+    <div class="content-title">
+      {{ intro.title }}
+    </div>
+    <div class="content-text" style="text-align: left;">
+      {{ intro.content }}
+    </div>
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="post-card" 
+    v-for="(info, index) in diaries"
+    :style="{ 'background-color': characters[info.roleIdx].color }"
+    >
+    <img 
+      :src="characters[info.roleIdx].url" 
+    />
+    <div>
+      <div class="title-bar">
+        {{ info.title }}
+      </div>
+      <div class="content-bar">
+        {{ info.content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+

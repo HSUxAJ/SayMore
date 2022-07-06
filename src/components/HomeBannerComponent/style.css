@@ -1,0 +1,37 @@
+.home-banner {
+  padding: 80px 0;
+  margin-top: 10px;
+  background-position: 50%;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  height: 300px;
+  padding: 0;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/saymore-1c57e.appspot.com/o/banner%2FTaipei-Night.jpg?alt=media&token=bcaa21c3-ccd2-4a59-9988-4ed4b61a009c")
+}
+
+.home-banner, .list-item{
+  background-position: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  transform: translateY(10px);
+  height: 300px;
+}
+
+.imgs-enter-active ,
+.imgs-leave-active {
+  transition: all 1s;
+}
+.imgs-enter-from {
+  transform: translateX(100%);
+}
+.imgs-enter-to {
+  transform: translateX(0);
+}
+
+.imgs-leave-from {
+  transform: translateX(0);
+}
+.imgs-leave-to {
+  transform: translateX(-100%);
+}

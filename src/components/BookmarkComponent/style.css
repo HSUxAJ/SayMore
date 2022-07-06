@@ -1,0 +1,22 @@
+.covered-items {
+  width: 20%;
+}
+
+.bookmark {
+  height: 200px;
+  width: 150px;
+  padding-left: 10px;
+  margin-top: 40px;
+  position: sticky;
+  top: 500px;
+  left: 10px;
+  text-align: top;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10%;
+}
+
+.links {
+  padding: 8px;
+  line-height: 15px;
+  text-decoration: none;
+}
